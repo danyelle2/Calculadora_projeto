@@ -21,5 +21,16 @@ namespace Calculadora_projeto
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
