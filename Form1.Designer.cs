@@ -83,6 +83,7 @@
             this.button17.TabIndex = 36;
             this.button17.Text = "+";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button16
             // 
@@ -106,17 +107,19 @@
             this.button15.TabIndex = 34;
             this.button15.Text = "-";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.MediumPurple;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(235, 257);
+            this.button14.Location = new System.Drawing.Point(236, 257);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(61, 52);
             this.button14.TabIndex = 33;
             this.button14.Text = "x";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 

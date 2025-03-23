@@ -113,9 +113,45 @@ namespace Calculadora_projeto
             }
         }
 
+        private Operacoes OperacaoAtual { get; set; }
+        private decimal Valor { get; set; }
+        private decimal Resultado { get; set; }
+
+        private enum Operacoes
+        {
+
+            Adicao,
+            Subtracao,
+            Multiplicacao,
+            Divisao
+        }
+
         private void button16_Click(object sender, EventArgs e)
         {
-            
+            OperacaoAtual= Operacoes.Divisao;
+            Valor = Convert.ToDecimal(textBox2.Text);
+            textBox2.Text = "";
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            OperacaoAtual=Operacoes.Multiplicacao;
+            Valor = Convert.ToDecimal(textBox2.Text);
+            textBox2.Text = "";
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            OperacaoAtual = Operacoes.Subtracao;
+            Valor = Convert.ToDecimal(textBox2.Text);
+            textBox2.Text = "";
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            OperacaoAtual = Operacoes.Adicao;
+            Valor = Convert.ToDecimal(textBox2.Text);
+            textBox2.Text = "";
         }
     }
 }
