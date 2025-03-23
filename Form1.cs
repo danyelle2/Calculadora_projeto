@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Calculadora_projeto
 {
@@ -22,15 +23,99 @@ namespace Calculadora_projeto
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+
+        private void AddPlay(string number)
         {
-            
-            
+            textBox2.Text = textBox2.Text + number;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddPlay("1");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddPlay("2");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddPlay("3");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AddPlay("4");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddPlay("5");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AddPlay("6");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AddPlay("7");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AddPlay("8");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            AddPlay("9");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            AddPlay("0");
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = "," ;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = "";
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length > 0)
+            {
+                textBox2.Text = textBox2.Text.Substring(0, textBox2.Text.Length - 1);
+            }
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
