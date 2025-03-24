@@ -26,8 +26,8 @@ namespace Calculadora_projeto
        
 
         private void AddPlay(string number)
-        {
-            textBox2.Text = textBox2.Text + number;
+        {         
+                textBox2.Text = textBox2.Text + number;            
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -92,9 +92,42 @@ namespace Calculadora_projeto
 
         private void button12_Click(object sender, EventArgs e)
         {
+            switch (OperacaoAtual)
+            {
+               case Operacoes.Adicao:
+                Resultado = Valor + Convert.ToDecimal(textBox2.Text);
+                break;
 
+                case Operacoes.Subtracao:
+                 Resultado = Valor - Convert.ToDecimal(textBox2.Text);
+                 break;
+
+                 case
+                  Operacoes.Multiplicacao:
+                  Resultado = Valor * Convert.ToDecimal(textBox2.Text);
+                  break;
+
+                case
+                     Operacoes.Divisao:
+
+                    if (textBox2.Text == "0")
+
+                    {
+                        textBox2.Text = "Zero não é divisível."; 
+                        return;
+                    }
+
+                    if (Convert.ToDecimal(textBox2.Text) != 0)
+
+                        Resultado = Valor / Convert.ToDecimal(textBox2.Text);
+
+                    break;
+            }
+
+            textBox2.Text = Convert.ToString(Resultado);
         }
 
+               
         private void button13_Click(object sender, EventArgs e)
         {
             textBox2.Text = "";
